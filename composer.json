@@ -1,6 +1,6 @@
 {
     "name": "johnshuxian/qiyewechat",
-    "description": "self",
+    "description": "laravel用企业微信接口对接",
     "type": "library",
     "license": "MIT",
     "authors": [
