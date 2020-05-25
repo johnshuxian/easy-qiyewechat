@@ -17,10 +17,7 @@
     "autoload": {
         "psr-4": {
             "John\\QiYeWechat\\": "src/"
-        },
-        "files": [
-            "src/helper/FunctionService.php"
-        ]
+        }
     },
     "extra": {
         "laravel": {
