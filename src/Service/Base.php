@@ -75,19 +75,19 @@ class Base
                 case 'contacts_token':
                     $corpid     = config('qy_wechat.qy_id');
                     $corpsecret = config('qy_wechat.contacts_secrets');
-                    $cache_key  = 'qy_wechat:contacts_token';
+                    $cache_key  = 'qy_wechat:contacts_token_'.$corpid;
 
                     break;
                 case 'app_token':
                     $corpid     = config('qy_wechat.qy_id');
                     $corpsecret = config('qy_wechat.app.agent_secrets');
-                    $cache_key  = 'qy_wechat:access_token';
+                    $cache_key  = 'qy_wechat:access_token_'.$corpid;
 
                     break;
                 case 'customer_token':
                     $corpid     = config('qy_wechat.qy_id');
                     $corpsecret = config('qy_wechat.customer_token');
-                    $cache_key  = 'qy_wechat:customer_token';
+                    $cache_key  = 'qy_wechat:customer_token_'.$corpid;
 
                 break;
                 default:

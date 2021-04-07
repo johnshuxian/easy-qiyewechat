@@ -2,6 +2,7 @@
 
 namespace John\QiYeWechat;
 
+use John\QiYeWechat\Service\AppChat;
 use John\QiYeWechat\Service\Crm;
 use John\QiYeWechat\Service\Department;
 use John\QiYeWechat\Service\GroupChat;
@@ -81,5 +82,15 @@ class QiYeWechat
     public function message()
     {
         return Message::init();
+    }
+
+    /**
+     * 应用消息推送
+     * @return AppChat
+     * @throws Exception\QyWechatException
+     */
+    public function appChat()
+    {
+        return AppChat::init();
     }
 }
